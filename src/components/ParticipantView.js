@@ -36,15 +36,14 @@ export const CornerDisplayName = ({
   const [coords, setCoords] = useState({}); // takes current button coordinates
   // eslint-disable-next-line
   const statsBoxHeight = useMemo(
-    // eslint-disable-next-line
     () => statsBoxHeightRef?.offsetHeight
     // eslint-disable-next-line
-
+    , [statsBoxHeightRef, isPresenting, participantId]
+    // eslint-disable-next-line
   );
   // eslint-disable-next-line
   const statsBoxWidth = useMemo(
     () => statsBoxWidthRef?.offsetWidth,
-    // eslint-disable-next-line
     [statsBoxWidthRef]
   );
 

@@ -39,7 +39,10 @@ function ParticipantsViewer({ isPresenting }) {
       }
     }
     return ids;
+    // eslint-disable-next-line
   }, [
+    isPresenting,
+    localParticipant.id,
     participants,
     activeSpeakerId,
     pinnedParticipants,
