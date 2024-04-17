@@ -2,7 +2,7 @@
   "name": "react-sdk-example",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://lab.videosdk.live/react-rtc-demo/",
+  "homepage": "https://videocall-page.netlify.app",
   "dependencies": {
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^1.0.6",
