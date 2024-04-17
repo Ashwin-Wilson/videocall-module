@@ -127,15 +127,20 @@ export function JoiningScreen({
 
   useEffect(() => {
     getCameraDevices();
+    // eslint-disable-next-line
   }, [isCameraPermissionAllowed]);
 
   useEffect(() => {
     getAudioDevices();
+    // eslint-disable-next-line
   }, [isMicrophonePermissionAllowed]);
 
   useEffect(() => {
     checkMediaPermission();
+    // eslint-disable-next-line
+
     return () => { };
+    // eslint-disable-next-line
   }, []);
 
   const _toggleWebcam = () => {
@@ -241,13 +246,13 @@ export function JoiningScreen({
     try {
       const permission = await requestPermission(mediaType);
 
-      if (mediaType == Constants.permission.AUDIO) {
+      if (mediaType === Constants.permission.AUDIO) {
         setIsMicrophonePermissionAllowed(
           permission.get(Constants.permission.AUDIO)
         );
       }
 
-      if (mediaType == Constants.permission.VIDEO) {
+      if (mediaType === Constants.permission.VIDEO) {
         setIsCameraPermissionAllowed(
           permission.get(Constants.permission.VIDEO)
         );

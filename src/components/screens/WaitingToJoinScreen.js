@@ -5,6 +5,7 @@ import useIsTab from "../../hooks/useIsTab";
 import useIsMobile from "../../hooks/useIsMobile";
 
 const WaitingToJoinScreen = () => {
+  // eslint-disable-next-line
   const waitingMessages = [
     { index: 0, text: "Creating a room for you..." },
     { index: 1, text: "Almost there..." },
@@ -25,7 +26,7 @@ const WaitingToJoinScreen = () => {
     return () => {
       clearInterval(intervalRef.current);
     };
-  }, []);
+  }, [waitingMessages]);
 
   const isTab = useIsTab();
   const isMobile = useIsMobile();

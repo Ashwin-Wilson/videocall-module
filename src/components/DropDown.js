@@ -56,7 +56,7 @@ export default function DropDown({
       setRecordingProgress(0)
       setRecordingStatus("inactive")
     }
-  }, [didDeviceChange])
+  }, [didDeviceChange,setDidDeviceChange])
 
   const analyseAudio = (audioTrack) => {
     const audioStream = new MediaStream([audioTrack]);
